@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Storage>
+  <ClusterName>Test Cluster</ClusterName>
+  <AutoBootstrap>false</AutoBootstrap>
+  <Keyspaces>
+    <Keyspace Name="Keyspace1">Name="Blog"&gt;&lt;ColumnFamily CompareWith="UTF8Type" Name="Authors"/&gt;    &lt;ColumnFamily ColumnType="Super" CompareWith="UTF8Type" CompareSubcolumnsWith="UTF8Type" Name="Posts"/&gt;    &lt;ColumnFamily CompareWith="UTF8Type" Name="Tags"/&gt; <ColumnFamily Name="Standard2" CompareWith="UTF8Type" KeysCached="100%"></ColumnFamily><ColumnFamily Name="StandardByUUID1" CompareWith="TimeUUIDType"></ColumnFamily><ColumnFamily Name="Super1" ColumnType="Super" CompareWith="BytesType" CompareSubcolumnsWith="BytesType"></ColumnFamily><ColumnFamily Name="Super2" ColumnType="Super" CompareWith="UTF8Type" CompareSubcolumnsWith="UTF8Type" RowsCached="10000" KeysCached="50%" Comment="A column family with supercolumns, whose column and subcolumn names are UTF8 strings"></ColumnFamily><ReplicaPlacementStrategy>org.apache.cassandra.locator.RackUnawareStrategy</ReplicaPlacementStrategy><ReplicationFactor>1</ReplicationFactor><EndPointSnitch>org.apache.cassandra.locator.EndPointSnitch</EndPointSnitch></Keyspace>
+  </Keyspaces>
+  <Authenticator>org.apache.cassandra.auth.AllowAllAuthenticator</Authenticator>
+  <Partitioner>org.apache.cassandra.dht.RandomPartitioner</Partitioner>
+  <InitialToken></InitialToken>
+  <CommitLogDirectory>C:/cassandra/data/commitlog</CommitLogDirectory>
+  <DataFileDirectories>
+    <DataFileDirectory>C:/cassandra/data/data</DataFileDirectory>
+  </DataFileDirectories>
+  <Seeds>
+    <Seed>127.0.0.1</Seed>
+  </Seeds>
+  <RpcTimeoutInMillis>10000</RpcTimeoutInMillis>
+  <CommitLogRotationThresholdInMB>128</CommitLogRotationThresholdInMB>
+  <ListenAddress>localhost</ListenAddress>
+  <StoragePort>7000</StoragePort>
+  <ThriftAddress>localhost</ThriftAddress>
+  <ThriftPort>9160</ThriftPort>
+  <ThriftFramedTransport>false</ThriftFramedTransport>
+  <DiskAccessMode>auto</DiskAccessMode>
+  <RowWarningThresholdInMB>512</RowWarningThresholdInMB>
+  <SlicedBufferSizeInKB>64</SlicedBufferSizeInKB>
+  <FlushDataBufferSizeInMB>32</FlushDataBufferSizeInMB>
+  <FlushIndexBufferSizeInMB>8</FlushIndexBufferSizeInMB>
+  <ColumnIndexSizeInKB>64</ColumnIndexSizeInKB>
+  <MemtableThroughputInMB>64</MemtableThroughputInMB>
+  <BinaryMemtableThroughputInMB>256</BinaryMemtableThroughputInMB>
+  <MemtableOperationsInMillions>0.3</MemtableOperationsInMillions>
+  <MemtableFlushAfterMinutes>60</MemtableFlushAfterMinutes>
+  <ConcurrentReads>8</ConcurrentReads>
+  <ConcurrentWrites>32</ConcurrentWrites>
+  <CommitLogSync>periodic</CommitLogSync>
+  <CommitLogSyncPeriodInMS>10000</CommitLogSyncPeriodInMS>
+  <GCGraceSeconds>864000</GCGraceSeconds>
+</Storage>

@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Built-By: hadrian
+Created-By: Apache Maven Bundle Plugin
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Import-Package: javax.activation,javax.mail;version="[1.4,2)",javax.ma
+ il.internet;version="[1.4,2)",javax.mail.search;version="[1.4,2)",jav
+ ax.mail.util;version="[1.4,2)",org.apache.camel;version="[2.2,2.3)",o
+ rg.apache.camel.converter;version="[2.2,2.3)",org.apache.camel.impl;v
+ ersion="[2.2,2.3)",org.apache.camel.spi;version="[2.2,2.3)",org.apach
+ e.camel.util;version="[2.2,2.3)",org.apache.commons.logging;version="
+ [1.1,2)",org.springframework.mail.javamail;version="[2.5,4)"
+Bnd-LastModified: 1265862507307
+Export-Package: org.apache.camel.component.mail;uses:="javax.mail.util
+ ,org.apache.camel.converter,javax.activation,org.apache.commons.loggi
+ ng,org.apache.camel.spi,org.apache.camel,javax.mail.internet,javax.ma
+ il,org.apache.camel.util,org.apache.camel.impl,org.springframework.ma
+ il.javamail,javax.mail.search";version="2.2.0"
+Bundle-Version: 2.2.0
+Ignore-Package: org.apache.camel.component.mail
+Bundle-Name: camel-mail
+Bundle-Description: Camel Mail support
+Build-Jdk: 1.5.0_22
+Bundle-DocURL: http://www.apache.org/
+Bundle-ManifestVersion: 2
+Bundle-Vendor: The Apache Software Foundation
+Implementation-Title: Apache Camel
+Bundle-SymbolicName: org.apache.camel.camel-mail
+Tool: Bnd-0.0.357
+Implementation-Version: 2.2.0
+
